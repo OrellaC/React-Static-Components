@@ -1,71 +1,102 @@
-/* *{ border: 1px solid red;
-    width:600px;
-    height: 700px;
-    margin: 15px auto;
-
-} */
-
-#main-container{
+.item{
     display: grid; 
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    gap: 5px;
-    height: 100%;
-   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    background-color: rgb(247, 243, 243);
+    width: 1500px;
+    height: 1000px;
+    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+    padding:75px;
+    margin: auto;
+  
+    /* grid-row-gap: 50px;
+    grid-column-gap: 10px; */
+
+
 }
+
 
 .left-container{
-    background-color: #9A75BE; 
+    background-color: lightgrey; 
     grid-row-start: 1;
-    grid-column-start: 1;
     grid-row-end: 4;
+    grid-column-start: 1;
     grid-column-end: 2;
-    
+    width: 200px;
+    height: 864px;
+    padding:25px;
 
 }
+
+
 .left-items{
-  background-color: black;
+    margin-top: 100%;
+    line-height: 300%;
+    font-weight: bold
+
 }
+
 
 .top-item-1{
-    background-color: #D95BBB; 
+    background-color: lightgrey; 
     grid-row-start: 1;
-    grid-column-start: 2;
     grid-row-end: 2;
+    grid-column-start: 2;
     grid-column-end: 3;
+    width: 200px;
+    height: 300px;
+    padding:10px;
+
 }
 .top-item-2{
-    background-color: #D665DC; 
+    background-color: lightgrey; 
     grid-row-start: 1;
-    grid-column-start: 3;
     grid-row-end: 2;
+    grid-column-start: 3;
     grid-column-end: 4;
+    width: 200px;
+    height: 300px;
+    padding:10px;
 }
 
 .top-item-3{
-    background-color: #FCB896; 
+    background-color: lightgrey; 
     grid-row-start: 1;
-    grid-column-start: 4;
     grid-row-end: 2;
+    grid-column-start: 4;
     grid-column-end: 5;
+    width: 200px;
+    height: 300px;
+    padding:10px;
+
+}
+.item-3-content{
+    text-align: center;
+}
+.bottom-container{
+    background-color: lightgrey; 
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    width: 90%;
+    height: 83%;
+    padding:10px;
 }
 
-.bottom-container{
-    background-color: #995B57; 
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-row-end: 4;
-    grid-column-end: 5;
-}
+
 
 .bottom-items{
-    /* width: 480px;
-    height:90px;
+    width: 75%;
+    height:300px;
     margin: 0 auto;
     padding:10px;
     position: relative;
-    background-color: red; */
+    background-color: gray;
+}
 
-
-
+span{
+    display: flex;
+    align-items: center;
 }

@@ -1,8 +1,7 @@
-//Main Container - this is the parent element that holds the children items
 class MainContainer extends React.Component {
     render() {
         return(
-        <div idName="main-container">
+            <div className="item">
             <div className="left-container">
                 <div className="left-items">
                     <span>Dashboard</span>
@@ -11,9 +10,8 @@ class MainContainer extends React.Component {
                     <span>Customers</span>
                     <span>Online Analysis</span>
                     <span>Settings</span>
-                </div>
-                </div>
-    
+              </div>
+              </div>
 
             <div className="top-item-1">
                 <h3>Reviews</h3>
@@ -27,9 +25,11 @@ class MainContainer extends React.Component {
 
             <div className="top-item-3">
                 <h3>Sentiment Analysis</h3>
+                <div className="item-3-content">
                 <h2>960</h2>
                 <h2>122</h2>
                 <h2>321</h2>
+                </div>
             </div>
 
             <div className="bottom-container">
@@ -38,25 +38,23 @@ class MainContainer extends React.Component {
                 <div className="bottom-items"></div>
             </div>
 
-</div>
+            </div>
         // closes main div
         )
-    }
+        }
 }
-
 
 class App extends React.Component {
     render() {
         return (
-            <div>
-    
-                <MainContainer />
-        
-            </div>
+            <MainContainer />
         )
     }
 }
+
 ReactDOM.render(
     <App />,
-    document.querySelector('#main-container')
+    document.querySelector('.main-container')
 );
+
+
